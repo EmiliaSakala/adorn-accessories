@@ -1,5 +1,10 @@
 import React from "react";  
 import '../../pages/home/home.css';
+import necklaces from '../../assets/necklaces.jfif';
+import bracelets from '../../assets/bracelets.jfif';
+import earrings from '../../assets/earrings.jfif';
+import rings from '../../assets/rings.jfif';
+import watches from '../../assets/watches.jfif';
 
 export default function Home() {
   return (
@@ -18,17 +23,36 @@ export default function Home() {
         <h2>Categories</h2>
         <div className="categories-inner">
             <div className="category-card">
-                <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Necklaces" />
+                <img src={necklaces} alt="Necklaces" />
                 <h3>Necklaces</h3>
             </div>
             <div className="category-card">
-                <img src="https://images.unsplash.com/photo-1522312346375-d1a52e2b99b3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Bracelets" />
+                <img src={bracelets} alt="Bracelets" />
                 <h3>Bracelets</h3>
             </div>
             <div className="category-card">
-                <img src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Earrings" />
+                <img src={earrings} alt="Earrings" />
                 <h3>Earrings</h3>
             </div>
+             <div className="category-card">
+                <img src={watches} alt="Earrings" />
+                <h3>Watches</h3>
+            </div>
+            <div className="category-card">
+                <img src={rings} alt="Earrings" />
+                <h3>Rings</h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section className="contact">
+    <div className="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or need assistance, feel free to reach out to our customer support team.</p>
+        <div className="contact-details">
+            <a href="mailto:emiliasakala18@gmail.com" className="btn">Email Us</a>
+        <a href="https://wa.me/c/263782120332">View the catalog on WhatsApp</a>
         </div>
     </div>
 </section>
